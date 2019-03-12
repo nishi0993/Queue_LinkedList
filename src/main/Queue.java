@@ -43,7 +43,18 @@ public class Queue {
 
     @Override
     public String toString() {
-
+StringBuilder result=new StringBuilder();
+result.append("[");
+Node temp=this.front;
+while(temp!=null){
+    result.append(temp.getData());
+    if (temp.getNext()!=null){
+        result.append("--");
+    }
+    temp=temp.getNext();
+}
+result.append("]");
+return result.toString();
     }
 
     public void enqueue(int data){
