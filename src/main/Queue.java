@@ -59,9 +59,12 @@ return result.toString();
 
     public void enqueue(int data){
         Node node = new Node(data,null);
-    }
-    public int dequeue(){
-
+        if(this.front==null && this.rear==null){
+            this.front=this.rear=node;
+        }
+        this.rear.setNext(node);
+        this.rear=node;
+        this.size++;
     }
 
 }
