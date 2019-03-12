@@ -26,5 +26,8 @@ public class Queue {
             this.next = next;
         }
     }
+    private int size=0;
+    private Node front=null;
+    private Node rear=null;
 
 }
