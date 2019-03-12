@@ -32,5 +32,25 @@ public class Queue {
 
     public static void main(String[] args) {
         Queue queue = new Queue();
+        System.out.println(queue);
+        for (int i = 0; i < 5; i++) {
+            queue.enqueue(i+1);
+        }
+        System.out.println(queue);
+        queue.dequeue();
+        System.out.println(queue);
+    }
+
+    @Override
+    public String toString() {
+
+    }
+
+    public void enqueue(int data){
+        Node node = new Node(data,null);
+    }
+    public int dequeue(){
+
+    }
 
 }
