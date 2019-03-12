@@ -10,4 +10,12 @@ public class Queue {
             this.next = next;
         }
 
+        public int getData() {
+            return data;
+        }
+
+        public void setData(int data) {
+            this.data = data;
+        }
+
 }
