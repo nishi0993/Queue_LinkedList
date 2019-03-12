@@ -30,4 +30,8 @@ public class Queue {
     private Node front=null;
     private Node rear=null;
 
+    public static void main(String[] args) {
+
+
+    }
 }
