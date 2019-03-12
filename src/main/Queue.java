@@ -66,5 +66,13 @@ return result.toString();
         this.rear=node;
         this.size++;
     }
+    public int dequeue(){
+        int response=-1;
+        if(this.front!=null){
+            response=this.front.getData();
+            this.front=this.front.getNext();
+        }
+        return response;
+    }
 
 }
